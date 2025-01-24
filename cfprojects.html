@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Fabrication Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <a class="logo-link" href="./index.html">Michel Robert</a>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#project1">Project 1</a></li>
+                <li><a href="#project2">Project 2</a></li>
+                <li><a href="#project3">Project 3</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <a class="logo" href="./index.html">Michel Robert</a>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="Introduction">
+        <div class="section__text">           
+            <h1 class="title">Computational Fabrication</h1>
+            <div class="project-img-group">
+                <img src="./assets/Body_Grasshopper.png" class="general_project_img">
+                <img src="./assets/Rhino_body.png" class="general_project_img">
+                <img src="./assets/hexagon tiling.png" class="general_project_img">
+            </div>
+            <div class="details-container-projects">
+                <p>These projects showcase my work in a computational fabrications course, 
+                    exploring the intersection of design, coding, and 3D printing. Each project 
+                    was developed in Grasshopper-Rhino using Python and brought to life with a 
+                    Creality Ender 3 printer.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <div class="section__text">
+            <div id="project1" class = project-container>
+                <p class="section__text__p1">Project 1</p>
+                <h1 class="title">Parametric Vessels</h1>
+                <div class="project-img-container">
+                    <img src="./assets/vessel1.jpg" class="project-page-img" alt="Vessel 1">
+                    <img src="./assets/vessel2.jpg" class="project-page-img" alt="Vessel 2">
+                    <img src="./assets/vessel3.jpg" class="project-page-img" alt="Vessel 3">
+                </div>
+                <div class="details-container-projects">
+                    <p>
+                        For this project, we were tasked with developing a program to generate
+                        3D parametric vessels. The program constructs these vessels by stacking
+                        layers of polygons on top of one another. Each layer can be customized
+                        with an adjustable number of sides, radius, and tilt angle, enabling 
+                        endless design possibilities.
+                    </p>
+                </div>
+            </div>
+            <div id="Project2" class = project-container>
+                <p class="section__text__p1">Project 2</p>
+                <h1 class="title">Data Physicalization</h1>
+                <div class="project-img-container">
+                    <img src="./assets/BachPartitaVessel.jpg" class="project-page-img" alt="Bach Partita Vessel">
+                    <img src="./assets/Nambe_BMP.png" class="project-page-img" alt="Bit map">
+                    <img src="./assets/SantaFeSkiArea.jpg" class="project-page-img" alt="Topographic map">                    
+                </div>
+                <div class="details-container-projects">
+                    <p>
+                        For this project, we were tasked with creating objects from selected datasets. My first
+                        object was derived from MIDI data of Johann Sebastian Bach's Partita No. 3 for solo violin.
+                        Each note was assigned a numeric value from 0 to 127. Groups of four notes were averaged, 
+                        and I selected 100 data points from these averages to form the basis of a vessel.
+
+                        The second object was generated from a bitmap representation of a topographic map of the 
+                        Santa Fe ski area. Each pixel's brightness was used to define elevation values, constructing 
+                        the topography row by row.
+                    </p>
+                </div>
+            </div>
+            <div id="Project3" class = project-container>
+                <p class="section__text__p1">Project 3</p>
+                <h1 class="title">Computational Ukulele</h1>
+                <div class="project-img-container">
+                    <img src="./assets/finished-uke.jpg" class="project-page-img-horizontal" alt="Bach Partita Vessel">
+                    <img src="./assets/uke-body1.jpg" class="project-page-img" alt="Bit map">
+                    <img src="./assets/Rhino_body.png" class="project-page-img" alt="Topographic map">                    
+                </div>
+                <div class="details-container-projects">
+                    <p>
+                        For this project, I aimed to construct a customizable ukulele by applying the skills learned 
+                        throughout the course. The body of the instrument is defined by two curves in Rhino that shape 
+                        its sides and top walls. Due to technical constraints, the neck of the instrument is a 3D model 
+                        rather than being computationally generated.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="mail icon" class="icon contact-icon mail-icon">
+                <p><a href="mailto:Microbe580@gmail.com">Microbe580@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-link-container">
+                <ul class="nav-links">
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Michel Robert. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
