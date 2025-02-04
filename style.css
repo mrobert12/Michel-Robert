@@ -461,3 +461,12 @@ footer p {
     border-radius: 2rem;
     border: rgb(100, 99, 99) 0.3rem solid;
 }
+
+#git-link{
+    color: blue;
+    
+}
+#git-link:hover{
+    text-decoration: underline;
+    
+}
