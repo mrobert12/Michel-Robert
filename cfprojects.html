@@ -43,12 +43,19 @@
                 <img src="./assets/Rhino_body.png" class="general_project_img">
                 <img src="./assets/hexagon tiling.png" class="general_project_img">
             </div>
-            <div class="details-container-projects">
-                <p>These projects showcase my work in a computational fabrications course, 
-                    exploring the intersection of design, coding, and 3D printing. Each project 
-                    was developed in Grasshopper-Rhino using Python and brought to life with a 
-                    Creality Ender 3 printer.
-                </p>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <p>This page is a general overview of the projects,
+                            more details and project files can be found here:</p>
+                            <a href="https://github.com/mrobert12/CS_491_Comp_Fabrication" target="_self">Github Repository Computational Fabrication</a>
+                        <p>These projects showcase my work in a computational fabrications course, 
+                            exploring the intersection of design, coding, and 3D printing. Each project 
+                            was developed in Grasshopper-Rhino using Python and brought to life with a 
+                            Creality Ender 3 3-D printer. 
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -62,17 +69,17 @@
                     <img src="./assets/vessel2.jpg" class="project-page-img" alt="Vessel 2">
                     <img src="./assets/vessel3.jpg" class="project-page-img" alt="Vessel 3">
                 </div>
-                <div class="details-container-projects">
+                <div class="details-container">
                     <p>
                         For this project, we were tasked with developing a program to generate
                         3D parametric vessels. The program constructs these vessels by stacking
-                        layers of polygons on top of one another. Each layer can be customized
+                        layers of polygons on top of one another. Each layer is customizable
                         with an adjustable number of sides, radius, and tilt angle, enabling 
                         endless design possibilities.
                     </p>
                 </div>
             </div>
-            <div id="Project2" class = project-container>
+            <div id="project2" class = project-container>
                 <p class="section__text__p1">Project 2</p>
                 <h1 class="title">Data Physicalization</h1>
                 <div class="project-img-container">
@@ -80,12 +87,13 @@
                     <img src="./assets/Nambe_BMP.png" class="project-page-img" alt="Bit map">
                     <img src="./assets/SantaFeSkiArea.jpg" class="project-page-img" alt="Topographic map">                    
                 </div>
-                <div class="details-container-projects">
+                <div class="details-container">
                     <p>
                         For this project, we were tasked with creating objects from selected datasets. My first
                         object was derived from MIDI data of Johann Sebastian Bach's Partita No. 3 for solo violin.
-                        Each note was assigned a numeric value from 0 to 127. Groups of four notes were averaged, 
-                        and I selected 100 data points from these averages to form the basis of a vessel.
+                        I created a python program to read a midi file and Each note was assigned a numeric value 
+                        from 0 to 127. Groups of four notes were averaged and saved to a CSV file, and I selected 
+                        100 data points from these averages to form the basis of a vessel.
 
                         The second object was generated from a bitmap representation of a topographic map of the 
                         Santa Fe ski area. Each pixel's brightness was used to define elevation values, constructing 
@@ -93,7 +101,7 @@
                     </p>
                 </div>
             </div>
-            <div id="Project3" class = project-container>
+            <div id="project3" class = project-container>
                 <p class="section__text__p1">Project 3</p>
                 <h1 class="title">Computational Ukulele</h1>
                 <div class="project-img-container">
@@ -101,7 +109,7 @@
                     <img src="./assets/uke-body1.jpg" class="project-page-img" alt="Bit map">
                     <img src="./assets/Rhino_body.png" class="project-page-img" alt="Topographic map">                    
                 </div>
-                <div class="details-container-projects">
+                <div class="details-container">
                     <p>
                         For this project, I aimed to construct a customizable ukulele by applying the skills learned 
                         throughout the course. The body of the instrument is defined by two curves in Rhino that shape 
