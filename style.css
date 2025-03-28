@@ -265,6 +265,15 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .about-containers, .about-details-container {
@@ -290,6 +299,7 @@ section {
     border-color: rgb(163,163,163);
     text-align:center;
 }
+
 
 .details-container-projects{
     margin-left: 17rem;
