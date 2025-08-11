@@ -370,10 +370,11 @@ article .icon {
 }
 
 .project-img {
+    border:1px solid gray;
     border-radius: 2rem;
     width: 175px;
     height: 90%;
-    
+    min-height:175px;
 }
 
 .project-title {
