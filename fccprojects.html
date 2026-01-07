@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Fabrication Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <a class="logo-link" href="./index.html">Michel Robert</a>
+        <div>
+            <ul class="nav-links">
+                
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <a class="logo" href="./index.html">Michel Robert</a>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="Introduction">
+        <div class="section__text">           
+            <h1 class="title">FreeCodeCamp Full Stack Projects</h1>
+            <div class="project-img-group">
+                <img src="./assets/DrumMachine.png" class="general_project_img" alt="Project 1 Img">
+                <img src="./assets/BubbleSortApp.png" class="general_project_img" alt="Project 2 Img">
+                <img src="./assets/MDtoHTML.png" class="general_project_img" alt= "Project 3 Img">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <p>
+                            On this page you will find some examples of web-application projects completed while working through FreeCodeCamp's full stack developer curriculum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <div class="section__text">
+            <div id="project1" class = project-container>
+                <p class="section__text__p1">Project 1</p>
+                <h1 class="title"><a href="./FCCDrumMachine#index.html" target="_blank">Drum Machine</a></h1>
+                <div class="project-img-container">
+                    <img src="./assets/DrumMachine.png" class="project-page-img" alt="Sports Team Player Card app">
+                </div>
+                <div class="details-container">
+                    <h2><a href="./FCCDrumMachine#index.html" target="_blank">Drum Machine</a></h2>
+                    <p>
+                        This is a web-application for simulating a drum machine. The user can eithe ruse keyboard shortcuts to play selected sounds or manually click the "pads" using their mouse. A sound is played when one of the "pads" is hit, the sound name is displayed in the bottom window.
+                    </p>
+                    
+                </div>
+            </div>
+            <div id="project2" class = project-container>
+                <p class="section__text__p1">Project 2</p>
+                <h1 class="title"><a href="./FCCBubbleSort#index.html" target="_blank">Bubble Sort Visualizer</a></h1>
+                <div class="project-img-container">
+                    <img src="./assets/BubbleSortApp.png" class="project-page-img" alt="Sports Team Player Card app">
+                </div>
+                <div class="details-container">
+                    <h2><a href="./FCCBubbleSort#index.html" target="_blank">Bubble Sort Visualizer</a></h2>
+                    <p>
+                        This is a web-application for simulating the bubble sort algorithm. The app generates a list of 5 numbers and then sorts the list. At each step it shows the action it is performing by outlining the numbers attempting to be swapped in a dotted red line. The program can loop by pressing the generate array button resetting the view window.
+                    </p>
+                    
+                </div>
+            </div>
+            <div id="project3" class = project-container>
+                <p class="section__text__p1">Project 3</p>
+                <h1 class="title"><a href="./FCCMDtoHTML#index.html" target="_blank">MarkDown to HTML Converter</a></h1>
+                <div class="project-img-container">
+                    <img src="./assets/MDtoHTML.png" class="project-page-img" alt="Sports Team Player Card app">
+                </div>
+                <div class="details-container">
+                    <h2><a href="./FCCMDtoHTML#index.html" target="_blank">Markdown to HTML Converter</a></h2>
+                    <p>
+                        This project takes user input for certain markdown syntax and converts them to both raw HTML code and an html preview. Accepted inputs include: Headings 1,2 & 3, Bold text, Italic text, Images, linkes and quotes.
+                    </p>
+                    
+                </div>
+            </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="mail icon" class="icon contact-icon mail-icon">
+                <p><a href="mailto:Microbe580@gmail.com">Microbe580@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-link-container">
+                <ul class="nav-links">
+                    <li><a href="#">Top</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#experience">Experience</a></li>
+                    <li><a href="./index.html#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Michel Robert. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
